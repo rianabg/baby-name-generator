@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>BB Name Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto" rel="stylesheet">  </head>
+  <body>
+    <h1>BB Name Generator</h1>
+        <form>
+            <label id="input">What is your last name? :<br>
+                <input id="last-name" type="text" name="lastname">
+            </label>
+            <br>
+            <h3 id="kind">What kind of name are you looking for?</h3>
+            <label>Boy Name
+                <input id="boy" type="radio" name="gender" onclick="document.body.style.backgroundColor = 'skyblue';">
+            </label><br>
+            <label>Girl Name
+                <input id="girl" type="radio" name="gender" onclick="document.body.style.backgroundColor = 'lightpink';">
+            </label><br>
+            <label>I don't think names need to be gendered!
+                <input id="both" type="radio" name="gender" onclick="document.body.style.backgroundColor = 'lightyellow';"><br>
+            </label>
+        </form>
+        <br>
+    <button onclick="displayName()">Generate Name</button>
+    <h2 id="baby-name"></h2>
+
+    <script src="main.js"></script>
+  </body>
+</html>
